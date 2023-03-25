@@ -2,6 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -12,6 +13,12 @@ public class Menu {
 		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
 		String titular;
 		float saldo, limite, valor;
+		Conta c1 = new Conta(1, 123, 1, "Jeniffer Souza", 100000.00f);
+		
+		c1.visualizar();
+		
+		c1.sacar(900);
+		c1.visualizar();
 
 		System.out.println("***********************************\n\n");
 		System.out.println("       BANCO DO BRAZIL COM Z       \n\n");
