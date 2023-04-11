@@ -3,6 +3,8 @@ package conta;
 import java.util.Scanner;
 
 import conta.model.Conta;
+import conta.model.Corrente;
+import conta.model.Poupanca;
 import conta.util.Cores;
 
 public class Menu {
@@ -14,6 +16,13 @@ public class Menu {
 		String titular;
 		float saldo, limite, valor;
 		Conta c1 = new Conta(1, 123, 1, "Jeniffer Souza", 100000.00f);
+		
+		Poupanca cp1 = new Poupanca(12, 22, 1, "Marcos V.", 500, 24);
+		Corrente pc1 = new Corrente(1, 23, 2, "Marcos C.", 809.33f, 2200.3f);
+		
+		cp1.visualizar();
+		pc1.visualizar();
+		
 		
 		c1.visualizar();
 		
